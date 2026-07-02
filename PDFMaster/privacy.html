@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 - PDF Master</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    line-height: 1.7;
+    color: #1f2937;
+    background: linear-gradient(135deg, #eef2ff 0%, #fafafa 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 48px 40px;
+    box-shadow: 0 10px 40px rgba(99, 102, 241, 0.08);
+  }
+  h1 {
+    font-size: 32px;
+    color: #4338ca;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 36px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  h2 {
+    font-size: 20px;
+    color: #1f2937;
+    margin: 32px 0 12px;
+    padding-left: 12px;
+    border-left: 4px solid #6366f1;
+  }
+  p, li {
+    color: #4b5563;
+    font-size: 15px;
+    margin: 8px 0;
+  }
+  ul { padding-left: 24px; margin: 8px 0; }
+  .highlight {
+    background: #ecfdf5;
+    border-left: 4px solid #10b981;
+    padding: 16px 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    color: #065f46;
+  }
+  .footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+  }
+  a { color: #4f46e5; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  @media (max-width: 600px) {
+    .container { padding: 32px 24px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 PDF Master 隐私政策</h1>
+    <div class="subtitle">最后更新：2026 年 6 月 23 日</div>
+
+    <div class="highlight">
+      <strong>核心承诺：</strong> PDF Master 是一款 100% 本地处理的 PDF 编辑工具。我们不收集任何用户数据，你的所有文件都只保存在你的设备上，绝不传至任何服务器。
+    </div>
+
+    <h2>1. 我们收集什么</h2>
+    <p><strong>无。</strong>PDF Master 不收集、不存储、不传输任何用户数据：</p>
+    <ul>
+      <li>❌ 不收集个人信息（姓名、邮箱、电话）</li>
+      <li>❌ 不收集设备信息（型号、序列号、广告 ID）</li>
+      <li>❌ 不收集使用统计（点击、功能使用时长）</li>
+      <li>❌ 不收集文件内容（你的 PDF / 图片从不离开设备）</li>
+      <li>❌ 不使用任何第三方分析 SDK</li>
+    </ul>
+
+    <h2>2. 我们使用的 Apple API</h2>
+    <p>为保证 App 正常运行，我们使用以下 Apple 系统 API（这些 API 由系统提供，Apple 仅统计系统级使用，不涉及个人数据）：</p>
+    <ul>
+      <li><strong>UserDefaults</strong>：保存你的偏好设置（主题、OCR 语言、压缩 DPI）</li>
+      <li><strong>FileManager</strong>：访问你指定的本地文件</li>
+      <li><strong>PhotosUI</strong>：经你明确同意后读取/保存图片</li>
+      <li><strong>App Store (StoreKit 2)</strong>：处理 Pro 订阅和一次性购买（仅与 Apple 服务器通信，由 Apple 隐私政策保护）</li>
+    </ul>
+
+    <h2>3. 文件处理位置</h2>
+    <p>所有 PDF 操作（合并、拆分、压缩、OCR、签名等）都在你的 iPhone/iPad 设备本地完成，使用 Apple 提供的 PDFKit、Vision、PencilKit 等原生框架：</p>
+    <ul>
+      <li>✅ 文件从你选择的位置（Files、相册、iCloud）读取</li>
+      <li>✅ 在设备内存中处理</li>
+      <li>✅ 保存到你选择的位置（可覆盖原文件或另存为新文件）</li>
+      <li>✅ 你随时可删除导入的文件</li>
+    </ul>
+
+    <h2>4. 内购（Pro 订阅）</h2>
+    <p>当你购买 Pro 订阅或一次性 Pro 包时，<strong>支付信息由 Apple App Store 处理</strong>，我们不接触你的信用卡或支付凭证。Apple 收集哪些信息由 <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple 隐私政策</a> 规定。</p>
+    <p>我们仅在本地 UserDefaults 保存一个布尔值（<code>isProUnlocked</code>）来记录你的 Pro 状态，用于解锁功能。重启 App 或重装 App 后状态会保留。</p>
+
+    <h2>5. 第三方 SDK</h2>
+    <p>PDF Master <strong>不集成任何第三方 SDK</strong>。所有功能使用 Apple 官方原生框架：</p>
+    <ul>
+      <li>PDFKit（PDF 解析）</li>
+      <li>Vision（OCR 文字识别）</li>
+      <li>PencilKit（手写签名）</li>
+      <li>StoreKit 2（内购）</li>
+      <li>PhotosUI（相册）</li>
+      <li>SwiftUI（UI）</li>
+    </ul>
+    <p>无广告 SDK、无分析 SDK、无社交分享 SDK、无崩溃上报 SDK。</p>
+
+    <h2>6. 儿童隐私</h2>
+    <p>PDF Master 不针对 13 岁以下儿童设计，不收集任何年龄段儿童的个人信息，符合 COPPA 和 GDPR-K 规定。</p>
+
+    <h2>7. 你的权利</h2>
+    <p>由于我们不收集任何数据，<strong>无需注册账号、无需注销、无需数据导出</strong>。你的所有数据（导入的 PDF、配额记录、Pro 状态）都存储在你设备的本地：</p>
+    <ul>
+      <li>删除 App = 清除所有数据</li>
+      <li>重装 App = 重新开始（Pro 状态可通过"恢复购买"恢复）</li>
+      <li>iCloud 备份 = Apple 加密保护，仅你本人可访问</li>
+    </ul>
+
+    <h2>8. 政策更新</h2>
+    <p>如本政策有重大变更，我们会在 App 内显著位置通知。继续使用即视为接受更新后的政策。</p>
+
+    <h2>9. 联系我们</h2>
+    <p>如有隐私相关问题，请通过以下方式联系：</p>
+    <ul>
+      <li>邮箱：<a href="mailto:support@pdfmaster.app">support@pdfmaster.app</a></li>
+      <li>官网：<a href="https://pdfmaster.app">https://pdfmaster.app</a></li>
+    </ul>
+    <p>我们会在 7 个工作日内回复所有询问。</p>
+
+    <div class="footer">
+      © 2026 PDF Master · Made with ❤️ in China
+    </div>
+  </div>
+</body>
+</html>
